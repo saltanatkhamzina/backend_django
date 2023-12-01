@@ -33,7 +33,7 @@ jobs:
           script: |
             source /root/venv/bin/activate
             dir
-            cd test-django_app
+            cd test_django_app
             dir
             python manage.py migrate
             python manage.py collectstatic --noinput

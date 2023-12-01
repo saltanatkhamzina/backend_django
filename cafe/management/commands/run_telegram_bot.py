@@ -22,7 +22,7 @@ response = (
     "Commands:\n"
     "/start: type start to get Hello World!\n"
     "/foods: show foods\n"
-    "/add <shape> <color>: add another food"
+    "/add <name> <price>: add another food"
 )
 
 

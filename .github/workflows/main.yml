@@ -22,9 +22,6 @@ jobs:
           pip install -r requirements.txt
       - name: Run Tests
         run: |
-          pwd
-          dir
-          cd /root/test_django_app
           python manage.py test
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
@@ -34,7 +31,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: 22
           script: |
-            cd /root/test_django_app
             source /root/venv/bin/activate
             git pull
             python manage.py migrate

@@ -7,17 +7,17 @@ class TestBot(unittest.TestCase):
 
     def test_start(self):
         message = MagicMock()
-        message.chat.id = 534895748
+        message.chat.id = 499159397
         start(message)
 
     def test_help(self):
         message = MagicMock()
-        message.chat.id = 534895748
+        message.chat.id = 499159397
         handle_help(message)
 
     def test_foods(self):
         message = MagicMock()
-        message.chat.id = 534895748
+        message.chat.id = 499159397
         foods(message)
 
 

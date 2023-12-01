@@ -32,7 +32,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: 22
           script: |
-            cd test_django_app
             source /root/venv/bin/activate
             git pull
             python manage.py migrate

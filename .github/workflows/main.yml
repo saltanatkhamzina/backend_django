@@ -32,9 +32,8 @@ jobs:
           port: 22
           script: |
             source /root/venv/bin/activate
-            dir
             cd test_django_app
-            dir
+            git pull origin main
             python manage.py migrate
             python manage.py collectstatic --noinput
             sudo supervisorctl restart all
